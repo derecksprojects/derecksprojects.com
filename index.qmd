@@ -1,6 +1,6 @@
 ```{=html}
 <div class="column-margin">
-    <img src="/Images/logo/512-20240628_beige-tufte_derecksprojects-logo.png" alt="Dereck's Projects Consulting" style="width:100%">
+    <img src="/images/logo/512-20240628_beige-tufte_derecksprojects-logo.png" alt="Dereck's Projects Consulting" style="width:100%">
 </div>
 ```
 
@@ -19,7 +19,7 @@ As an American raised in France, I possess native fluency in English, French, an
 Dereck's Notes[^1] began in 2017 as a personal project, an attempt to integrate and condense everything I had learned in university. I have always been a prolific note taker, and I wanted to create a platform to share my knowledge with others. The project has since evolved into a knowledge distribution platform, scientific dictionary, scientific journal, and blog.
 
 ::: {.content-visible when-format="html"}
-[![derecksnotes.com](/Images/portfolio/derecksnotes.png){.column-margin #fig-cover}](https://www.derecksnotes.com)
+[![derecksnotes.com](/images/portfolio/derecksnotes.png){.column-margin #fig-cover}](https://www.derecksnotes.com)
 :::
 
 Early versions were in PHP, version 4.0 of the project demonstrates a dern technical stack to integrate advanced features and improve maintainability. I strongly focused one a polished frontend and backend, as well as strong DevOps + CI/CD.
@@ -60,7 +60,7 @@ Developing `dmplot` significantly enhanced my skills in financial data analysis 
 My scientific research focuses on applying bioinformatics, statistics, and high-performance computing to address complex scientific problems. Key areas of study include rheumatoid arthritis, breast cancer, and broader investigations in genomics, metabolomics, and proteomics.
 
 ::: {.content-visible when-format="html"}
-[![Inference of an integrative, executable network for rheumatoid arthritis combining data-driven machine learning approaches and a state-of-the-art mechanistic disease map](/Images/portfolio/jpm-11-00785-with-cover.png){.column-margin #fig-cover}](./TufteStyledBook.pdf)
+[![Inference of an integrative, executable network for rheumatoid arthritis combining data-driven machine learning approaches and a state-of-the-art mechanistic disease map](/images/portfolio/jpm-11-00785-with-cover.png){.column-margin #fig-cover}](./TufteStyledBook.pdf)
 :::
 
 *Notable publication:*
