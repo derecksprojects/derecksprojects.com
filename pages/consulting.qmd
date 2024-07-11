@@ -1,0 +1,61 @@
+---
+title: Consulting
+---
+
+:::{.panel-tabset}
+
+## Single Consultation
+
+<script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+<stripe-pricing-table pricing-table-id="prctbl_1PbW8GCX9b7s8MUg7Tr4acX2"
+publishable-key="pk_live_51PbTaoCX9b7s8MUg8RVws7vam1bNCNCh0I0syeo1ZQnDNeN67vU8Hi49vJGw71SuRMFyvLWKJ5BnHNJGh6LWUUgy00evUyTTxi">
+</stripe-pricing-table>
+
+## Ongoing Projects
+
+<script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+<stripe-pricing-table pricing-table-id="prctbl_1PbW3KCX9b7s8MUg35NEzWYJ"
+publishable-key="pk_live_51PbTaoCX9b7s8MUg8RVws7vam1bNCNCh0I0syeo1ZQnDNeN67vU8Hi49vJGw71SuRMFyvLWKJ5BnHNJGh6LWUUgy00evUyTTxi">
+</stripe-pricing-table>
+
+:::
+
+I offer specialised services in software engineering, bioinformatics, and data science. My interdisciplinary background enables me to tackle complex projects across various domains.
+
+## Key Services
+
+1. **Software Engineering**
+   - Full-stack web development (React, Next.js, Express)
+   - High-performance computing solutions
+   - R, Python, TypeScript/JavaScript development and optimization
+   - Scientific software development and code review
+
+2. **Data Engineering and Analytics**
+   - Data processing pipeline design and implementation
+   - Statistical analysis and complex data modeling
+   - Data visualization and dashboard development
+
+3. **Bioinformatics and Computational Biology**
+   - Genomic data analysis and variant calling
+   - Single-cell RNA sequencing analysis
+   - Custom bioinformatics pipeline development
+   - Machine learning integration with biological data
+
+4. **Financial Technology**
+   - Algorithmic trading strategy development
+   - Quantitative model implementation
+
+5. **Technical Writing and Consulting**
+   - Scientific publication preparation
+   - Technical documentation development
+   - Code review and best practices consultation
+
+## Technical Expertise
+
+- Languages: R, Python, TypeScript, C++
+- Web: React, Next.js, Express
+- Databases: MongoDB, SQL
+- DevOps: Docker, CI/CD, AWS (EC2, S3, Lambda)
+- Analysis: Statistical methods, Machine learning
+
+If you have an interesting project that aligns with these areas, I'm eager to contribute my expertise. My multilingual capabilities facilitate collaboration in international contexts.
