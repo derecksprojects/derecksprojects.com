@@ -1,27 +1,29 @@
 project:
     type: tufte
+    preview:
+      port: 7777
 book:
   open-graph: true
+  favicon: favicon.ico
+  twitter-card: true
   site-url: https://derecksprojects.com/
   repo-url: https://github.com/derecksprojects/derecksprojects.com/
   repo-actions: [issue]
   title: |
     Dereck's Projects\
-    Software | Bioinformatics | Data Science
-  subtitle: Yeet
-  title-short: Software and data consulting # title-short is used in the pdf head
-  output-file: derecksprojects.com # outputs: docs/TufteStyledBook.pdf
-  author: Dereck Mezquita
+    Consulting
+  subtitle: Software | Bioinformatics | Data Science
+  title-short: Software and data consulting # used in the pdf head
+  output-file: derecksprojects.com
+  author: Dereck Mezquita MSc
   publisher: Dereck Mezquita
-  date-format: YYYY-MMMM-DD
+  date-format: YYYY-MM-DD
   license: "CC BY"
   chapters:
     - index.qmd
-    - 02-Main/customizing.qmd
-    - 02-Main/known_issues.qmd
+    - pages/consulting.qmd
     - part: about.qmd
       chapters:
-        - 03-Back/references.qmd
-        - 03-Back/ack.qmd
-        - 03-Back/colophon.qmd
+        - pages/references.qmd
+        - pages/acknowledgements.qmd
 bibliography: references.bib
