@@ -6,3 +6,26 @@ deprecated/
 
 # machine
 .DS_Store
+
+# tufte quarto template
+/env/
+.env
+/.quarto/
+TufteStyledBook.tex
+TufteStyledBook.cls
+TufteStyledBook.toc
+TufteStyledBook.bst
+TufteStyledBook.pdf
+TufteStyledBook.log
+TufteStyledBook.aux
+TufteStyledBook.def
+tufte-book.tex
+tufte-book.cls
+tufte-book.toc
+tufte-book.bst
+tufte-book.pdf
+tufte-book.log
+tufte-book.aux
+tufte-book.def
+_tufte/
+docs/
