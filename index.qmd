@@ -16,13 +16,13 @@ As an American raised in France, I possess native fluency in English, French, an
 
 ### [Dereck's Notes](https://www.derecksnotes.com)
 
-Dereck's Notes began in 2017 as a personal project, an attempt to integrate and condense everything I had learned in university. I have always been a prolific note taker, and I wanted to create a platform to share my knowledge with others. The project has since evolved into a knowledge distribution platform, scientific dictionary, scientific journal, and blog.
+Dereck's Notes[^1] began in 2017 as a personal project, an attempt to integrate and condense everything I had learned in university. I have always been a prolific note taker, and I wanted to create a platform to share my knowledge with others. The project has since evolved into a knowledge distribution platform, scientific dictionary, scientific journal, and blog.
 
 ::: {.content-visible when-format="html"}
 [![derecksnotes.com](/Images/portfolio/derecksnotes.png){.column-margin #fig-cover}](https://www.derecksnotes.com)
 :::
 
-Early versions were in PHP, version 4.0 of the project demonstrates a modern technical stack to integrate advanced features and improve maintainability. I strongly focused one a polished frontend and backend, as well as strong DevOps + CI/CD.
+Early versions were in PHP, version 4.0 of the project demonstrates a dern technical stack to integrate advanced features and improve maintainability. I strongly focused one a polished frontend and backend, as well as strong DevOps + CI/CD.
 
 Key technical aspects:
 
@@ -38,13 +38,11 @@ Notable features:
 - Blog post filtering
 - Dictionary search functionality
 
-Source code[^1] is available on GitHub.
-
-[^1]: [Dereck's Notes GitHub Repository](https://github.com/derecksprojects/derecksnotes.com)
+[^1]: [Dereck's Notes GitHub Repo](https://github.com/derecksprojects/derecksnotes.com)
 
 ### [dmplot](https://github.com/dereckmezquita/dmplot)
 
-My interest in algorithmic trading and financial data analysis originated during my Master's degree. This academic pursuit led to a personal project: developing an algorithmic trading bot. From this, the `dmplot` package emerged as a comprehensive R framework for financial and time series data analysis.
+My interest in algorithmic trading and financial data analysis originated during my Master's degree. This academic pursuit led to a personal project: developing an algorithmic trading bot. From this, the `dmplot`[^2] [^3] package emerged as a comprehensive R framework for financial and time series data analysis.
 
 The `dmplot` package addresses the need for efficient processing and analysis of large financial datasets. It achieves this by combining high-performance C++ implementations with `ggplot2` for data visualisation. Key features include:
 
@@ -54,6 +52,9 @@ The `dmplot` package addresses the need for efficient processing and analysis of
 
 Developing `dmplot` significantly enhanced my skills in financial data analysis and visualisation, R package development, and C++ integration.
 
+[^2]: [dmplot GitHub Repo](https://github.com/derecksprojects/dmplot)
+[^3]: [dmplot documentation](https://dereckmezquita.github.io/dmplot)
+
 ## Research and Publications
 
 My scientific research focuses on applying bioinformatics, statistics, and high-performance computing to address complex scientific problems. Key areas of study include rheumatoid arthritis, breast cancer, and broader investigations in genomics, metabolomics, and proteomics.
@@ -62,10 +63,10 @@ My scientific research focuses on applying bioinformatics, statistics, and high-
 [![Inference of an integrative, executable network for rheumatoid arthritis combining data-driven machine learning approaches and a state-of-the-art mechanistic disease map](/Images/portfolio/jpm-11-00785-with-cover.png){.column-margin #fig-cover}](./TufteStyledBook.pdf)
 :::
 
-Notable publications:
+*Notable publication:*
 
-1. [Metabolomic Rewiring Promotes Endocrine Therapy Resistance in Breast Cancer](https://aacrjournals.org/cancerres/article-abstract/84/2/291/733113/Metabolomic-Rewiring-Promotes-Endocrine-Therapy) (Cancer Research, 2024)
-1. [Inference of an integrative, executable network for rheumatoid arthritis combining data-driven machine learning approaches and a state-of-the-art mechanistic disease map](https://www.mdpi.com/2075-4426/11/8/785) (Journal of Personalized Medicine, 2021)
+- [Metabolomic Rewiring Promotes Endocrine Therapy Resistance in Breast Cancer](https://aacrjournals.org/cancerres/article-abstract/84/2/291/733113/Metabolomic-Rewiring-Promotes-Endocrine-Therapy) (Cancer Research, 2024)
+- [Inference of an integrative, executable network for rheumatoid arthritis combining data-driven machine learning approaches and a state-of-the-art mechanistic disease map](https://www.mdpi.com/2075-4426/11/8/785) (Journal of Personalized Medicine, 2021)
 
 These publications exemplify my approach to leveraging computational methods for advancing understanding in life sciences. For a comprehensive list of my research contributions, please refer to my [Google Scholar profile](https://scholar.google.com/citations?user=3mWWedgAAAAJ&hl=en).
 
