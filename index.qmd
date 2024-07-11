@@ -1,0 +1,77 @@
+```{=html}
+<div class="column-margin">
+    <img src="/Images/logo/512-20240628_beige-tufte_derecksprojects-logo.png" alt="Dereck's Projects Consulting" style="width:100%">
+</div>
+```
+
+:::{.content-hidden when-format="html"}:::
+# Preface
+:::
+
+:::{.content-hidden when-format="pdf"}:::
+# Welcome
+:::
+
+I offer expert consulting services in software engineering, data science, and bioinformatics, with a focus on developing innovative solutions for complex scientific and financial problems.
+
+I offer expert consulting services in software engineering, data science, and bioinformatics, with a focus on developing innovative solutions for complex scientific and financial problems. My expertise spans from high-performance computing to genomic data analysis, allowing me to tackle multifaceted challenges in both academic and industry settings.
+
+
+## Showcase
+
+### [Dereck's Notes](https://www.derecksnotes.com)
+
+Dereck's Notes[^1] is a knowledge distribution platform, scientific dictionary, and blog I created for myself. It is now in its 4th iteration (v4.0). This project demonstrates my expertise in web development, **both front end and back end**, as well as content creation:
+
+[^1]: [GitHub: derecksnotes.com](https://github.com/derecksprojects/derecksnotes.com)
+
+::: {.content-visible when-format="html"}
+[![derecksnotes.com](/Images/portfolio/derecksnotes.png){.column-margin #fig-cover}](https://www.derecksnotes.com)
+:::
+
+TypeScript is used throughout the project. The frontend is built with Next.js 14, React, and MDX. The backend is powered by Express, Mongoose, and Redis, with Multer and Bcrypt for file uploads and password security, respectively.
+
+The whole is deployed via CI/CD pipelines using GitHub Actions and Docker.
+
+### [dmplot](https://github.com/dereckmezquita/dmplot)
+
+I originally became interested in algorithmic trading and financial data analysis while working on my dissertation. I developed the `dmplot` package to facilitate the analysis of financial and time series data. `dmplot` is an R framework written in high-performance C++ and `ggplot2` for financial and data analysis in general.
+
+- High-performance C++ functions for data processing
+- `ggplot2` custom layers
+- `R6` classes for stateful data processing and plotting
+
+It is a condensation of my knowledge accumulated in data science, software engineering, and financial analysis. The package provides R6 classes for easy data processing and plotting, algorithms, functions, and `ggplot2` layers for comprehensive financial data analysis.
+
+## Research and Publications
+
+My research is characterised by the application of bioinformatics, statistics and high-performance computing to solve complex scientific problems. Some fields I have worked on include rheumatoid arthritis, breast cancer, and studies on genomics, metabolomics, and proteomics.
+
+::: {.content-visible when-format="html"}
+[![Inference of an integrative, executable network for rheumatoid arthritis combining data-driven machine learning approaches and a state-of-the-art mechanistic disease map](/Images/portfolio/jpm-11-00785-with-cover.png){.column-margin #fig-cover}](./TufteStyledBook.pdf)
+:::
+
+- [Metabolomic Rewiring Promotes Endocrine Therapy Resistance in Breast Cancer](https://aacrjournals.org/cancerres/article-abstract/84/2/291/733113/Metabolomic-Rewiring-Promotes-Endocrine-Therapy) (Cancer Research, 2024)
+- [Inference of an integrative, executable network for rheumatoid arthritis combining data-driven machine learning approaches and a state-of-the-art mechanistic disease map](https://www.mdpi.com/2075-4426/11/8/785) (Journal of Personalized Medicine, 2021)
+
+View my full publication list on my [Google Scholar profile](https://scholar.google.com/citations?user=3mWWedgAAAAJ&hl=en).
+
+## Consulting Services
+
+I offer specialised consulting services leveraging my diverse skill set.
+
+My background spans multiple disciplines, allowing me to approach problems from various angles:
+
+1. **Software Engineering**: Developing high-performance applications and scalable web solutions.
+2. **Data Science**: Advanced statistical analysis and machine learning model development.
+3. **Bioinformatics**: Genomic data analysis and biological network inference.
+4. **Financial Analysis**: Creating tools for quantitative trading and technical indicators.
+
+## Contact
+
+- [GitHub](https://github.com/dereckmezquita)
+- [YouTube](https://www.youtube.com/@dereckdemezquita)
+- [Dereck's Notes](https://www.derecksnotes.com)
+- [Google Scholar](https://scholar.google.com/citations?user=3mWWedgAAAAJ&hl=en)
+
+Ready to elevate your project with expert consulting? [Contact me](#) to discuss how we can collaborate.
