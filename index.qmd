@@ -4,74 +4,78 @@
 </div>
 ```
 
-:::{.content-hidden when-format="html"}:::
 # Preface
-:::
 
-:::{.content-hidden when-format="pdf"}:::
-# Welcome
-:::
+I began programming at age 15 and have since developed professional expertise in software and data engineering. My formal education includes an MSc in Systems & Synthetic Biology, providing a foundation in Bioinformatics. This combination of long-term programming experience and scientific training enables effective work at the intersection of life sciences and advanced computing.
 
-I offer expert consulting services in software engineering, data science, and bioinformatics, with a focus on developing innovative solutions for complex scientific and financial problems.
+As an American raised in France, I possess native fluency in English, French, and Spanish, with additional fluency in Italian and Russian. This linguistic capability facilitates work in international scientific contexts. My professional focus includes high-performance computing, data infrastructure development, and scientific software creation. I specialize in transforming complex scientific and financial problems into data-driven solutions.
 
-I offer expert consulting services in software engineering, data science, and bioinformatics, with a focus on developing innovative solutions for complex scientific and financial problems. My expertise spans from high-performance computing to genomic data analysis, allowing me to tackle multifaceted challenges in both academic and industry settings.
-
+[Consulting/Contract work](/consulting)
 
 ## Showcase
 
 ### [Dereck's Notes](https://www.derecksnotes.com)
 
-Dereck's Notes[^1] is a knowledge distribution platform, scientific dictionary, and blog I created for myself. It is now in its 4th iteration (v4.0). This project demonstrates my expertise in web development, **both front end and back end**, as well as content creation:
-
-[^1]: [GitHub: derecksnotes.com](https://github.com/derecksprojects/derecksnotes.com)
+Dereck's Notes began in 2017 as a personal project, an attempt to integrate and condense everything I had learned in university. I have always been a prolific note taker, and I wanted to create a platform to share my knowledge with others. The project has since evolved into a knowledge distribution platform, scientific dictionary, scientific journal, and blog.
 
 ::: {.content-visible when-format="html"}
 [![derecksnotes.com](/Images/portfolio/derecksnotes.png){.column-margin #fig-cover}](https://www.derecksnotes.com)
 :::
 
-TypeScript is used throughout the project. The frontend is built with Next.js 14, React, and MDX. The backend is powered by Express, Mongoose, and Redis, with Multer and Bcrypt for file uploads and password security, respectively.
+Early versions were in PHP, version 4.0 of the project demonstrates a modern technical stack to integrate advanced features and improve maintainability. I strongly focused one a polished frontend and backend, as well as strong DevOps + CI/CD.
 
-The whole is deployed via CI/CD pipelines using GitHub Actions and Docker.
+Key technical aspects:
+
+- Frontend: Next.js 14 (app dir), React, TypeScript, MDX
+- Backend: Express, Mongoose, Redis
+- Infrastructure: Nginx, Linode, MongoDB, Redis
+- CI/CD: GitHub Actions, Docker
+
+Notable features:
+
+- User account functionality
+- Interactive commenting system
+- Blog post filtering
+- Dictionary search functionality
+
+Source code[^1] is available on GitHub.
+
+[^1]: [Dereck's Notes GitHub Repository](https://github.com/derecksprojects/derecksnotes.com)
 
 ### [dmplot](https://github.com/dereckmezquita/dmplot)
 
-I originally became interested in algorithmic trading and financial data analysis while working on my dissertation. I developed the `dmplot` package to facilitate the analysis of financial and time series data. `dmplot` is an R framework written in high-performance C++ and `ggplot2` for financial and data analysis in general.
+My interest in algorithmic trading and financial data analysis originated during my Master's degree. This academic pursuit led to a personal project: developing an algorithmic trading bot. From this, the `dmplot` package emerged as a comprehensive R framework for financial and time series data analysis.
 
-- High-performance C++ functions for data processing
-- `ggplot2` custom layers
-- `R6` classes for stateful data processing and plotting
+The `dmplot` package addresses the need for efficient processing and analysis of large financial datasets. It achieves this by combining high-performance C++ implementations with `ggplot2` for data visualisation. Key features include:
 
-It is a condensation of my knowledge accumulated in data science, software engineering, and financial analysis. The package provides R6 classes for easy data processing and plotting, algorithms, functions, and `ggplot2` layers for comprehensive financial data analysis.
+- High-performance C++ implementations of financial indicators (e.g., Bollinger Bands, EMA, MACD)
+- Custom `ggplot2` stats for financial data visualisation (e.g., candlesticks, Bollinger Bands)
+- Monte Carlo simulation implemented in high-performance C++
+
+Developing `dmplot` significantly enhanced my skills in financial data analysis and visualisation, R package development, and C++ integration.
 
 ## Research and Publications
 
-My research is characterised by the application of bioinformatics, statistics and high-performance computing to solve complex scientific problems. Some fields I have worked on include rheumatoid arthritis, breast cancer, and studies on genomics, metabolomics, and proteomics.
+My scientific research focuses on applying bioinformatics, statistics, and high-performance computing to address complex scientific problems. Key areas of study include rheumatoid arthritis, breast cancer, and broader investigations in genomics, metabolomics, and proteomics.
 
 ::: {.content-visible when-format="html"}
 [![Inference of an integrative, executable network for rheumatoid arthritis combining data-driven machine learning approaches and a state-of-the-art mechanistic disease map](/Images/portfolio/jpm-11-00785-with-cover.png){.column-margin #fig-cover}](./TufteStyledBook.pdf)
 :::
 
-- [Metabolomic Rewiring Promotes Endocrine Therapy Resistance in Breast Cancer](https://aacrjournals.org/cancerres/article-abstract/84/2/291/733113/Metabolomic-Rewiring-Promotes-Endocrine-Therapy) (Cancer Research, 2024)
-- [Inference of an integrative, executable network for rheumatoid arthritis combining data-driven machine learning approaches and a state-of-the-art mechanistic disease map](https://www.mdpi.com/2075-4426/11/8/785) (Journal of Personalized Medicine, 2021)
+Notable publications:
 
-View my full publication list on my [Google Scholar profile](https://scholar.google.com/citations?user=3mWWedgAAAAJ&hl=en).
+1. [Metabolomic Rewiring Promotes Endocrine Therapy Resistance in Breast Cancer](https://aacrjournals.org/cancerres/article-abstract/84/2/291/733113/Metabolomic-Rewiring-Promotes-Endocrine-Therapy) (Cancer Research, 2024)
+1. [Inference of an integrative, executable network for rheumatoid arthritis combining data-driven machine learning approaches and a state-of-the-art mechanistic disease map](https://www.mdpi.com/2075-4426/11/8/785) (Journal of Personalized Medicine, 2021)
 
-## Consulting Services
+These publications exemplify my approach to leveraging computational methods for advancing understanding in life sciences. For a comprehensive list of my research contributions, please refer to my [Google Scholar profile](https://scholar.google.com/citations?user=3mWWedgAAAAJ&hl=en).
 
-I offer specialised consulting services leveraging my diverse skill set.
+## Find me
 
-My background spans multiple disciplines, allowing me to approach problems from various angles:
+[Consulting/Contract work](/consulting)
 
-1. **Software Engineering**: Developing high-performance applications and scalable web solutions.
-2. **Data Science**: Advanced statistical analysis and machine learning model development.
-3. **Bioinformatics**: Genomic data analysis and biological network inference.
-4. **Financial Analysis**: Creating tools for quantitative trading and technical indicators.
-
-## Contact
-
-- [GitHub](https://github.com/dereckmezquita)
-- [YouTube](https://www.youtube.com/@dereckdemezquita)
-- [Dereck's Notes](https://www.derecksnotes.com)
+- GitHub:
+    - [github.com/dereckmezquita](https://github.com/dereckmezquita)
+    - [github.com/derecksprojects](https://github.com/derecksprojects)
+- [YouTube](https://youtube.com/@derecksyoutube)
+- [derecksnotes.com](https://derecksnotes.com)
 - [Google Scholar](https://scholar.google.com/citations?user=3mWWedgAAAAJ&hl=en)
-
-Ready to elevate your project with expert consulting? [Contact me](#) to discuss how we can collaborate.
