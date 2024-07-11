@@ -1,0 +1,8 @@
+
+
+# dev
+dev/
+deprecated/
+
+# machine
+.DS_Store
