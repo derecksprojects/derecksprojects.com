@@ -1,6 +1,6 @@
-FROM r-base:4.3.2 as builder
+FROM --platform=linux/arm64 r-base:4.3.2 as builder
 
-# Install system dependencies
+# Install system dependencies and TeX Live
 RUN apt-get update && apt-get install -y --no-install-recommends \
     wget \
     libcurl4-openssl-dev \
@@ -13,47 +13,30 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libpng-dev \
     libtiff5-dev \
     libjpeg-dev \
+    texlive-full \
+    fonts-texgyre \
+    fonts-ebgaramond \
     && rm -rf /var/lib/apt/lists/*
-
-# Install R packages
-RUN R -e "install.packages('tinytex')"
-
-# Install TinyTeX
-RUN Rscript -e 'tinytex::install_tinytex(force = TRUE)'
-
-# Set TinyTeX path
-ENV PATH="/root/.TinyTeX/bin/x86_64-linux:${PATH}"
-
-# Verify TinyTeX installation and update
-RUN /root/.TinyTeX/bin/x86_64-linux/tlmgr path add && \
-    /root/.TinyTeX/bin/x86_64-linux/tlmgr update --self && \
-    /root/.TinyTeX/bin/x86_64-linux/tlmgr update --all
-
-# Install additional LaTeX packages
-RUN /root/.TinyTeX/bin/x86_64-linux/tlmgr install \
-    koma-script \
-    caption \
-    pgf \
-    environ \
-    tikzfill \
-    tcolorbox \
-    pdfcol
 
 # Install Quarto
 ENV QUARTO_VERSION="1.5.54"
-RUN wget "https://github.com/quarto-dev/quarto-cli/releases/download/v${QUARTO_VERSION}/quarto-${QUARTO_VERSION}-linux-amd64.deb" && \
-    dpkg -i quarto-${QUARTO_VERSION}-linux-amd64.deb && \
+RUN wget "https://github.com/quarto-dev/quarto-cli/releases/download/v${QUARTO_VERSION}/quarto-${QUARTO_VERSION}-linux-arm64.deb" && \
+    dpkg -i quarto-${QUARTO_VERSION}-linux-arm64.deb && \
     apt-get update && apt-get install -f -y && \
-    rm quarto-${QUARTO_VERSION}-linux-amd64.deb
+    rm quarto-${QUARTO_VERSION}-linux-arm64.deb
 
 WORKDIR /app
 
 COPY . /app
 
+# Debug: List installed fonts
+RUN fc-list
+
+# Render Quarto document
 RUN quarto render /app --output-dir /app/output
 
 # Serve static files
-FROM nginx:stable-alpine
+FROM --platform=linux/arm64 nginx:stable-alpine
 
 COPY --from=builder /app/output /usr/share/nginx/html
 
