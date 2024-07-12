@@ -1,0 +1,77 @@
+name: Release Dev Docker image to Linode
+
+on:
+  push:
+    branches-ignore:
+      - 'master'
+env:
+  IMAGE_NAME_CLIENT: ${{ secrets.DOCKER_USERNAME }}/derecksprojects-client
+  CONTAINER_NAME_CLIENT: dev_linode_derecksprojects-client
+
+jobs:
+  push_to_registry_client:
+    name: Push Docker client image to Docker Hub
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
+
+      - name: Login to Docker Hub
+        uses: docker/login-action@f4ef78c080cd8ba55a85445d5b36e214a81df20a
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Build and push client image
+        uses: docker/build-push-action@3b5e8027fcad23fda98b2e3ac259d8d67585f671
+        with:
+          context: ./
+          file: ./Dockerfile
+          push: true
+          tags: ${{ env.IMAGE_NAME_CLIENT }}:latest_dev
+
+  deploy_to_linode:
+    name: Deploy docker-compose.yml to Linode
+    needs: push_to_registry_client
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v4
+
+      - name: Create .env file for docker-compose deployment
+        run: |
+          echo IMAGE_NAME_CLIENT=${{ env.IMAGE_NAME_CLIENT }}:latest_dev > .env
+          echo CONTAINER_NAME_CLIENT=${{ env.CONTAINER_NAME_CLIENT }} >> .env
+          echo PORT_MAP_CLIENT=3005 >> .env
+
+      - name: Copy docker-compose.yml to remote server
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.REMOTE_HOST }}
+          username: ${{ secrets.REMOTE_USERNAME }}
+          password: ${{ secrets.REMOTE_PASSWORD }}
+          port: ${{ secrets.REMOTE_PORT }}
+          source: './docker-compose.yml, .env'
+          target: '/root/dev_docker-compose-derecksprojects/'
+
+      - name: Deploy to remote server
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.REMOTE_HOST }}
+          username: ${{ secrets.REMOTE_USERNAME }}
+          password: ${{ secrets.REMOTE_PASSWORD }}
+          port: ${{ secrets.REMOTE_PORT }}
+          command_timeout: 20m
+          script: |
+            cd /root/dev_docker-compose-derecksprojects/
+            docker pull ${{ env.IMAGE_NAME_SERVER }}:latest_dev
+            docker pull ${{ env.IMAGE_NAME_CLIENT }}:latest_dev
+            docker container prune -f
+            docker system prune -af
+            docker rm -f ${{ env.CONTAINER_NAME_SERVER }} || true
+            docker rm -f ${{ env.CONTAINER_NAME_CLIENT }} || true
+            docker compose --env-file .env --project-name derecksprojects-dev down
+            docker compose --env-file .env --project-name derecksprojects-dev up -d
