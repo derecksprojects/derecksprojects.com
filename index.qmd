@@ -6,7 +6,7 @@
 
 # Preface
 
-I began programming at age 15 and have since developed professional expertise in software and data engineering. My formal education includes an MSc in Systems & Synthetic Biology, providing a foundation in Bioinformatics. This combination of long-term programming experience and scientific training enables effective work at the intersection of life sciences and advanced computing.
+I began programming at age 15 and have since developed professional expertise in software and data engineering. My formal education includes an MSc of Bioinformatics in Systems & Synthetic Biology. This combination of long-term programming experience and scientific training enables effective work at the intersection of life sciences and advanced computing.
 
 As an American raised in France, I possess native fluency in English, French, and Spanish, with additional fluency in Italian and Russian. This linguistic capability facilitates work in international scientific contexts. My professional focus includes high-performance computing, data infrastructure development, and scientific software creation. I specialize in transforming complex scientific and financial problems into data-driven solutions.
 

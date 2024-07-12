@@ -11,7 +11,7 @@ services:
       - dereck-network
     restart: unless-stopped
     volumes:
-      - /var/www/derecksprojects.com/public:/app/public
+      - /var/www/derecksprojects.com/images:/app/output/images
 
 networks:
   dereck-network:
