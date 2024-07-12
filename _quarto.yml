@@ -1,0 +1,29 @@
+project:
+  type: tufte
+  preview:
+    port: 7777
+book:
+  open-graph: true
+  favicon: favicon.ico
+  twitter-card: true
+  site-url: https://derecksprojects.com/
+  repo-url: https://github.com/derecksprojects/derecksprojects.com/
+  repo-actions: [issue]
+  title: |
+    Dereck's Projects\
+    Consulting
+  subtitle: Software | Bioinformatics | Data Science
+  title-short: Software and data consulting # used in the pdf head
+  output-file: derecksprojects.com
+  author: Dereck Mezquita MSc
+  publisher: Dereck Mezquita
+  date-format: YYYY-MM-DD
+  license: "CC BY"
+  chapters:
+    - index.qmd
+    - pages/consulting.qmd
+    - part: about.qmd
+      chapters:
+        - pages/references.qmd
+        - pages/acknowledgements.qmd
+bibliography: references.bib

@@ -1,0 +1,18 @@
+services:
+  linode_derecksprojects_client:
+    image: ${IMAGE_NAME_CLIENT}
+    container_name: ${CONTAINER_NAME_CLIENT}
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - '${PORT_MAP_CLIENT}:80'
+    networks:
+      - dereck-network
+    restart: unless-stopped
+    volumes:
+      - /var/www/derecksprojects.com/images:/app/output/images
+
+networks:
+  dereck-network:
+    external: true

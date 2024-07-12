@@ -1,0 +1,30 @@
+# About {.unnumbered .unlisted}
+
+I am a bioinformatician and software engineer with expertise in creating data infrastructures, developing scientific software, and applying advanced computational methods to complex biological problems. I began programming at 15 and have since developed a strong foundation in life sciences and computational methods, this has culminated in a rewarding academic and professional career.
+
+I love to learn and work on personal projects. I am a polyglot; native in English 🇬🇧, French 🇫🇷, and Spanish 🇪🇸 I am also fluent in Italian 🇮🇹 and I speak Russian 🇷🇺. My personal interests range from combat sports to high-performance robotics and hardware.
+
+## Education
+
+My academic background provides a strong foundation in both life sciences and computational methods:
+
+1. MSc Systems & Synthetic Biology; Bioinformatics
+   - Université de Paris-Saclay, France (2019 - 2020)
+   - Degree obtained
+   - University ranking: 1st in France, 14th world-wide
+
+2. MSc Molecular Microbiology & Biotech
+   - Université de Toulouse III, France (2018 - 2019)
+   - Continuing education
+   - University ranking: 10-13th in France, 201-300th world-wide
+
+3. Medicinal & Pharmaceutical Chemistry
+   - Université d'Angers, France (2014 - 2018)
+   - Continuing education
+
+4. BSc Cellular/Molecular Biology & Physiology
+   - Université d'Angers, France (2014 - 2017)
+   - Degree obtained
+   - University ranking: 33-35th in France, 901-1000th world-wide
+
+This diverse educational background, combined with years of practical programming experience, enables me to work effectively at the intersection of life sciences and advanced computing.
