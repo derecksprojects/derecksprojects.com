@@ -7,7 +7,3 @@ https://singular-ai.atlassian.net/browse/<TICKET-ID>
 -   [ ] Version bump
 -   [ ] Clean up code
 
-# tests updated
-
--   [ ] integration test
--   [ ] unit test
