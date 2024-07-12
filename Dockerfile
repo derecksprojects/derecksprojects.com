@@ -1,22 +1,62 @@
-# https://github.com/quarto-dev/quarto-cli/discussions/2050
-FROM node:18-alpine AS base
+FROM r-base:4.3.2 as builder
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    wget \
+    libcurl4-openssl-dev \
+    libssl-dev \
+    libxml2-dev \
+    libfontconfig1-dev \
+    libfreetype6-dev \
+    libharfbuzz-dev \
+    libfribidi-dev \
+    libpng-dev \
+    libtiff5-dev \
+    libjpeg-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install R packages
+RUN R -e "install.packages('tinytex')"
+
+# Install TinyTeX
+RUN Rscript -e 'tinytex::install_tinytex(force = TRUE)'
+
+# Set TinyTeX path
+ENV PATH="/root/.TinyTeX/bin/x86_64-linux:${PATH}"
+
+# Verify TinyTeX installation and update
+RUN /root/.TinyTeX/bin/x86_64-linux/tlmgr path add && \
+    /root/.TinyTeX/bin/x86_64-linux/tlmgr update --self && \
+    /root/.TinyTeX/bin/x86_64-linux/tlmgr update --all
+
+# Install additional LaTeX packages
+RUN /root/.TinyTeX/bin/x86_64-linux/tlmgr install \
+    koma-script \
+    caption \
+    pgf \
+    environ \
+    tikzfill \
+    tcolorbox \
+    pdfcol
+
+# Install Quarto
+ENV QUARTO_VERSION="1.5.54"
+RUN wget "https://github.com/quarto-dev/quarto-cli/releases/download/v${QUARTO_VERSION}/quarto-${QUARTO_VERSION}-linux-amd64.deb" && \
+    dpkg -i quarto-${QUARTO_VERSION}-linux-amd64.deb && \
+    apt-get update && apt-get install -f -y && \
+    rm quarto-${QUARTO_VERSION}-linux-amd64.deb
+
+WORKDIR /app
 
 COPY . /app
 
-# set quarto version here as env var
-ENV QUARTO_VERSION="1.5.54"
+RUN quarto render /app --output-dir /app/output
 
-RUN apt-get update \ 
-  && apt-get -y install wget ca-certificates \
-  && wget "https://github.com/quarto-dev/quarto-cli/releases/download/v${QUARTO_VERSION}/quarto-${QUARTO_VERSION}-linux-arm64.deb" -O quarto.deb \
-  && dpkg -i quarto.deb
+# Serve static files
+FROM nginx:stable-alpine
 
-RUN quarto install tinytex
-
-RUN quarto render /app --output-dir /usr/share/nginx/html
-
-FROM nginx:latest
-
-COPY --from=build /usr/share/nginx/html /usr/share/nginx/html
+COPY --from=builder /app/output /usr/share/nginx/html
 
 EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
