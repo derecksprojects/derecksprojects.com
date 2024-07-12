@@ -1,6 +1,9 @@
 name: Release Dev Docker image to Linode
 
-on: push
+on:
+  push:
+    branches-ignore:
+      - 'master'
 env:
   IMAGE_NAME_CLIENT: ${{ secrets.DOCKER_USERNAME }}/derecksprojects-client
   CONTAINER_NAME_CLIENT: dev_linode_derecksprojects-client
