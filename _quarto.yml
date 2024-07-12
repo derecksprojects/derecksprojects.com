@@ -1,7 +1,7 @@
 project:
-    type: tufte
-    preview:
-      port: 7777
+  type: tufte
+  preview:
+    port: 7777
 book:
   open-graph: true
   favicon: favicon.ico
