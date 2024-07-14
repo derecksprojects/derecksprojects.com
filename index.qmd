@@ -16,11 +16,11 @@ As an American raised in France, I possess native fluency in English, French, an
 
 ### [Dereck's Notes](https://www.derecksnotes.com){target="_blank"}
 
-Dereck's Notes[^1] began in 2017 as a personal project, an attempt to integrate and condense everything I had learned in university. I have always been a prolific note taker, and I wanted to create a platform to share my knowledge with others. The project has since evolved into a knowledge distribution platform, scientific dictionary, scientific journal, and blog.
-
 ::: {.content-visible when-format="html"}
 [![derecksnotes.com](/images/portfolio/derecksnotes.png){.column-margin #fig-cover}](https://www.derecksnotes.com){target="_blank"}
 :::
+
+Dereck's Notes[^1] began in 2017 as a personal project, an attempt to integrate and condense everything I had learned in university. I have always been a prolific note taker, and I wanted to create a platform to share my knowledge with others. The project has since evolved into a knowledge distribution platform, scientific dictionary, scientific journal, and blog.
 
 Early versions were in PHP, version 4.0 of the project demonstrates a dern technical stack to integrate advanced features and improve maintainability. I strongly focused one a polished frontend and backend, as well as strong DevOps + CI/CD.
 
@@ -40,7 +40,11 @@ Notable features:
 
 [^1]: [Dereck's Notes GitHub Repo](https://github.com/derecksprojects/derecksnotes.com){target="_blank"}
 
-### [dmplot](https://github.com/dereckmezquita/dmplot)
+### [dmplot](https://dereckmezquita.github.io/dmplot){target="_blank"}
+
+::: {.content-visible when-format="html"}
+[![dmplot](/images/portfolio/512-20240628_dmplot-logo.png){.column-margin #fig-cover}](https://dereckmezquita.github.io/dmplot){target="_blank"}
+:::
 
 My interest in algorithmic trading and financial data analysis originated during my Master's degree. This academic pursuit led to a personal project: developing an algorithmic trading bot. From this, the `dmplot`[^2] [^3] package emerged as a comprehensive R framework for financial and time series data analysis.
 
