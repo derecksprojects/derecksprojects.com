@@ -5,7 +5,10 @@ project:
 book:
   open-graph: true
   favicon: favicon.ico
-  twitter-card: true
+  twitter-card:
+    image: "/images/logo/512-20240628_beige-tufte_derecksprojects-logo.png"
+    title: "Dereck's Projects Consulting"
+    description: "Software | Bioinformatics | Data Science"
   site-url: https://derecksprojects.com/
   repo-url: https://github.com/derecksprojects/derecksprojects.com/
   repo-actions: [issue]
