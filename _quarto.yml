@@ -4,7 +4,6 @@ project:
   preview:
     port: 7777
 book:
-  image: "/images/logo/512-20240628_beige-tufte_derecksprojects-logo.png"
   open-graph: true
   favicon: favicon.ico
   twitter-card:
