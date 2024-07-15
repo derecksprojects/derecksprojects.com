@@ -13,8 +13,7 @@ book:
   repo-url: https://github.com/derecksprojects/derecksprojects.com/
   repo-actions: [issue]
   title: |
-    Dereck's Projects\
-    Consulting
+    Dereck's Projects Consulting
   subtitle: Software | Bioinformatics | Data Science
   title-short: Software and data consulting # used in the pdf head
   output-file: derecksprojects.com
