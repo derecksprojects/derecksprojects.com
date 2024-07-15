@@ -1,3 +1,4 @@
+# version: 0.0.2
 project:
   type: tufte
   preview:
@@ -5,13 +6,15 @@ project:
 book:
   open-graph: true
   favicon: favicon.ico
-  twitter-card: true
+  twitter-card:
+    image: "/images/logo/512-20240628_beige-tufte_derecksprojects-logo.png"
+    title: "Dereck's Projects Consulting"
+    description: "Software | Bioinformatics | Data Science"
   site-url: https://derecksprojects.com/
   repo-url: https://github.com/derecksprojects/derecksprojects.com/
   repo-actions: [issue]
   title: |
-    Dereck's Projects\
-    Consulting
+    Dereck's Projects Consulting
   subtitle: Software | Bioinformatics | Data Science
   title-short: Software and data consulting # used in the pdf head
   output-file: derecksprojects.com
