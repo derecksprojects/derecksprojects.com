@@ -1,10 +1,10 @@
 # [derecksprojects.com](https://www.derecksprojects.com) <img src="./images/logo/256-20240628_beige-tufte_derecksprojects-logo.png" width="75" align="right">
 
-This repository contains the source code for Dereck's Projects Consulting website, built with Quarto and inspired by the Tufte-Quarto project.
+This repository contains the source code for Dereck's Projects website, built with Quarto and inspired by the Tufte-Quarto project.
 
 ## About
 
-A Quarto-based website showcasing my consulting/contracting services:
+A Quarto-based website showcasing my open source work:
 
 - Tufte-style theming
 - Custom styling aligned with brand identity
@@ -32,8 +32,8 @@ Using the extension by @fredhuth [Tufte-Quarto template](https://github.com/fred
 
 ## Copyright
 
-© 2024 Dereck's Projects Consulting. All rights reserved.
+© 2024 Dereck's Projects. All rights reserved.
 
 ---
 
-For more information, visit [Dereck's Projects | Consulting](https://www.derecksprojects.com).
+For more information, visit [Dereck's Projects](https://www.derecksprojects.com).

@@ -1,4 +1,4 @@
-# version: 0.0.2
+# version: 0.0.3
 project:
   type: tufte
   preview:
@@ -8,15 +8,15 @@ book:
   favicon: favicon.ico
   twitter-card:
     image: "/images/logo/512-20240628_beige-tufte_derecksprojects-logo.png"
-    title: "Dereck's Projects Consulting"
+    title: "Dereck's Projects"
     description: "Software | Bioinformatics | Data Science"
   site-url: https://derecksprojects.com/
   repo-url: https://github.com/derecksprojects/derecksprojects.com/
   repo-actions: [issue]
   title: |
-    Dereck's Projects Consulting
+    Dereck's Projects
   subtitle: Software | Bioinformatics | Data Science
-  title-short: Software and data consulting # used in the pdf head
+  title-short: Software and Science # used in the pdf head
   output-file: derecksprojects.com
   author: Dereck Mezquita MSc
   publisher: Dereck Mezquita
@@ -24,7 +24,6 @@ book:
   license: "CC BY"
   chapters:
     - index.qmd
-    - pages/consulting.qmd
     - part: about.qmd
       chapters:
         - pages/references.qmd
